@@ -14,6 +14,6 @@ Bot.on('ready', function() {
 Bot.on('message', message => {
 	if (message.content === prefix + "prog"){
     message.channel.send("Désolée, il n\'y a pas de programmation pour le moment...");
-  });
+  };
 });
 
