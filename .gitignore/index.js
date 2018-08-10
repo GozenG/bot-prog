@@ -3,6 +3,9 @@ const Bot = new Discord.Client();
 
 var prefix = ("$")
 
+Bot.login(process.env.TOKEN);
+
+
 Bot.on('ready', function() {
   Bot.user.setGame("Command: $");
   console.log("connected");
@@ -14,4 +17,3 @@ Bot.on('message', message => {
   });
 });
 
-Bot.login(process.env.TOKEN);
